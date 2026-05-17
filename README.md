@@ -11,7 +11,7 @@
 
 <img src="HardwarePortfolio/Topside Control Unit/TCU ASSEMBLY.png" width="400">
 
-4-layer communication hub PCB for a stacked robotic system handling processing, networking, and sensor interfacing.
+A 2-layer communication hub designed as part of a custom ROV electronics stack. Integrates an ESP32 with dual CAN bus nodes, dual CH340G USB-to-UART bridges with an auto-programmer circuit, HC-12 and nRF24L01 dual-band wireless, and four analog camera channels — all on a single board that stacks directly above the TPU on shared standoffs.
 
 ### Key Features
 - ESP32-WROOM-32 main controller  
@@ -29,7 +29,7 @@
 
 <img src="HardwarePortfolio/Topside Power Unit/TPU PCB.png" width="400">
 
-Dual-input power distribution PCB managing system-wide power, protection, and monitoring for a multi-board robotic system.
+The power foundation of the ROV topside stack, managing dual 48V and 12V input rails with polyfuse protection, varistor clamping, ACS712 Hall-effect current sensing up to ±30A, and a relay-switched 48V output driven through an optocoupler for galvanic isolation.
 
 ### Key Features
 - 48V + 12V dual input with protection  
@@ -47,7 +47,7 @@ Dual-input power distribution PCB managing system-wide power, protection, and mo
 
 <img src="HardwarePortfolio/Camera Board/Camera Board PCB.jpeg" width="400">
 
-Passive routing board for structured distribution of video, camera, and communication signals between system modules.
+A passive 2-layer routing board that consolidates analog camera inputs, IP camera signals, and communication lines into a single structured patch point. Twelve solder jumpers allow per-channel video balun bypass without any board rework, making it practical for field debugging.
 
 ### Key Features
 - 4x analog camera channels  
@@ -64,7 +64,7 @@ Passive routing board for structured distribution of video, camera, and communic
 
 <img src="HardwarePortfolio/Video Balun/Video Balun PCB.jpeg" width="400">
 
-Passive analog video transmission board enabling long-distance signal integrity over twisted-pair cabling.
+Four independent transformer-based balun channels convert single-ended composite video signals into impedance-matched differential pairs for transmission over unshielded twisted-pair tether cabling, with 51Ω termination on each output leg to minimise reflections.
 
 ### Key Features
 - 4x video balun transformer channels  
