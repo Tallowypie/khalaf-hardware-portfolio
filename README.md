@@ -9,7 +9,7 @@
 
 ## Topside Communication Unit (TCU)
 
-<img src="HardwarePortfolio/Topside Control Unit/TCU ASSEMBLY.png" width="650">
+<img src="HardwarePortfolio/Topside Control Unit/TCU ASSEMBLY.png" width="400">
 
 4-layer communication hub PCB for a stacked robotic system handling processing, networking, and sensor interfacing.
 
@@ -21,13 +21,13 @@
 - 4x analog camera inputs via RJ45  
 - Regulated 3.3V logic power with protection  
 
-<img src="HardwarePortfolio/Topside Control Unit/TCU PCB.png" width="650">
+<img src="HardwarePortfolio/Topside Control Unit/TCU PCB.png" width="400">
 
 ---
 
 ## Topside Power Unit (TPU)
 
-<img src="HardwarePortfolio/Topside Power Unit/TPU PCB.png" width="650">
+<img src="HardwarePortfolio/Topside Power Unit/TPU PCB.png" width="400">
 
 Dual-input power distribution PCB managing system-wide power, protection, and monitoring for a multi-board robotic system.
 
@@ -39,13 +39,13 @@ Dual-input power distribution PCB managing system-wide power, protection, and mo
 - Multi-rail power distribution (12V / 5V / 3.3V)  
 - USB power outputs for subsystems  
 
-<img src="HardwarePortfolio/Topside Power Unit/TPU SCHEMATIC.png" width="650">
+<img src="HardwarePortfolio/Topside Power Unit/TPU SCHEMATIC.png" width="400">
 
 ---
 
 ## Video & Signal Breakout Board
 
-<img src="HardwarePortfolio/Camera Board/Camera Board PCB.jpeg" width="650">
+<img src="HardwarePortfolio/Camera Board/Camera Board PCB.jpeg" width="400">
 
 Passive routing board for structured distribution of video, camera, and communication signals between system modules.
 
@@ -56,13 +56,13 @@ Passive routing board for structured distribution of video, camera, and communic
 - Separation of video and communication lines  
 - System-level debugging interface  
 
-<img src="HardwarePortfolio/Camera Board/Camera Board Schematic.jpeg" width="650">
+<img src="HardwarePortfolio/Camera Board/Camera Board Schematic.jpeg" width="400">
 
 ---
 
 ## Video Balun Board
 
-<img src="HardwarePortfolio/Video Balun/Video Balun PCB.jpeg" width="650">
+<img src="HardwarePortfolio/Video Balun/Video Balun PCB.jpeg" width="400">
 
 Passive analog video transmission board enabling long-distance signal integrity over twisted-pair cabling.
 
@@ -73,6 +73,6 @@ Passive analog video transmission board enabling long-distance signal integrity 
 - Ground-referenced center tap design  
 - Modular integration with system breakout board  
 
-<img src="HardwarePortfolio/Video Balun/Video Balun Schematic.jpeg" width="650">
+<img src="HardwarePortfolio/Video Balun/Video Balun Schematic.jpeg" width="400">
 
 ---
