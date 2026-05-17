@@ -13,7 +13,7 @@ Fresh graduate specializing in:
 
 # Topside Communication Unit (TCU)
 
-<img src="HardwarePortfolio/Topside Control Unit/TCU PCB.png" width="650">
+<img src="HardwarePortfolio/Topside Control Unit/TCU ASSEMBLY.png" width="650">
 
 4-layer communication and processing PCB designed as the upper board in a stacked two-board robotic system. Acts as the central communication hub, interfacing sensors, cameras, wireless modules, and CAN networks.
 
@@ -31,7 +31,7 @@ Fresh graduate specializing in:
 - ESD and overcurrent protection
 - Mechanically stackable with lower TPU board
 
-<img src="assets/tcu/layout.png" width="650">
+<img src="HardwarePortfolio/Topside Control Unit/TCU PCB.png" width="650">
 
 ---
 
