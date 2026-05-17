@@ -69,7 +69,72 @@ The TPU handles high-voltage input regulation, protected power distribution, cur
 
 ---
 
-# Contact
-Email: your@email.com
-LinkedIn: your-link
-GitHub: your-link
+# Video & Signal Distribution Breakout Board
+
+<img src="HardwarePortfolio/Camera Board/Camera Board PCB.jpeg" width="650">
+
+A passive signal routing and breakout PCB designed to sit between the TCU and system peripherals, providing structured access to video, camera, and communication signals.
+
+The board acts as a flexible interconnect layer, improving system organization, debugging capability, and reconfigurability during development and testing.
+
+---
+
+## Key Features
+
+- Multi-purpose signal routing between system subsystems (TCU ↔ cameras ↔ communication lines)
+- Three main connector groups for IP video, analog video, and communication signals
+- Independent analog camera channels (4x) via JST connectors
+- solder jumper-based routing for flexible signal path selection
+- Support for external/internal video balun configuration per channel
+- Structured net naming for scalable system integration
+
+---
+
+## Design Highlights
+
+- Passive routing architecture (no active components)
+- Fully reconfigurable signal paths using solder jumpers
+- Modular connector system for fast debugging and system rewire
+- Designed for testability and rapid bring-up
+- Clean signal separation for analog vs digital lines
+- Layout optimized for system integration rather than electronics density
+
+---
+
+<img src="HardwarePortfolio/Camera Board/Camera Board Schematic.jpeg" width="650">
+
+---
+
+# Video Balun Board
+
+<img src="HardwarePortfolio/Video Balun/Video Balun PCB.jpeg" width="650">
+
+A passive analog video transmission PCB designed as the long-distance signal interface for the system’s camera network.
+
+The board converts single-ended composite camera signals into balanced differential pairs for transmission over twisted-pair cabling, improving noise immunity and maintaining signal integrity across long cable runs.
+
+---
+
+## Key Features
+
+- Four video balun transformer channels (T1–T4)
+- Converts composite video signals into differential transmission lines
+- 51 Ω impedance matching on each differential output leg
+- Centre-tapped secondary grounded for stable reference
+- Designed for long-distance analog video transmission over twisted-pair cabling
+- Integrated 2.54mm board-to-board connectors for modular system integration
+
+---
+
+## Design Highlights
+
+- Passive analog front-end (no active amplification)
+- Impedance-matched signal conversion for minimal reflection loss
+- Differential signalling over unshielded twisted pair (UTP)
+- Modular integration with breakout board via standard headers
+- Designed for robustness in electrically noisy environments
+- Part of a layered camera + communication system architecture
+
+---
+
+<img src="HardwarePortfolio/Video Balun/Video Balun Schematic.jpeg" width="650">
