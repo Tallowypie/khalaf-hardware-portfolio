@@ -11,46 +11,93 @@ Fresh graduate specializing in:
 
 # Projects
 
-## 1. Basketball Shooting Robot
+# Topside Communication Unit (TCU)
 
-![Robot](assets/basketball/hero.png)
+<img src="assets/tcu/hero.png" width="700">
 
-Autonomous robot designed to detect and shoot basketballs.
+A custom 4-layer communication and processing PCB designed as the upper board in a stacked two-board architecture, mounted directly above the TPU using shared standoffs.
 
-### My Role
-- Control system design
-- Embedded programming
-- PCB design
-
-### Highlights
-- PID control
-- Camera-based target detection
-- Real-time motor control
-
-### PCB Layout
-![PCB](assets/basketball/layout.png)
-
-### Key Schematic
-![Schematic](assets/basketball/schematic.png)
+The TCU acts as the central communication and control hub of the system, receiving power and low-level signals from the TPU while handling wireless communication, CAN networking, USB programming, and analog camera interfacing.
 
 ---
 
-## 2. Rehabilitation Device Controller
+## My Role
+- Full schematic capture in :contentReference[oaicite:0]{index=0}
+- 4-layer PCB layout and routing
+- Component selection and interface design
+- Power tree design and signal integrity considerations
+- Hardware debugging and bring-up
 
-![Rehab](assets/rehab/hero.png)
+---
 
-Designed controller hardware and communication system.
+## Key Technical Features
 
-### My Role
-- PCB design in Altium
-- GUI integration using Qt
-- system debugging
+### Embedded Processing
+- ESP32-WROOM-32 as central MCU
+- Dual UART channels
+- Dual SPI buses (VSPI + HSPI)
+- Relay and Hall-effect sensor control
 
-### PCB
-![PCB](assets/rehab/layout.png)
+---
 
-### Schematic
-![Schematic](assets/rehab/schematic.png)
+### USB Programming Interface
+- Dual CH340G bridges
+- Independent USB Type-B interfaces
+- Automatic ESP32 boot/program circuit using BC817 transistors
+- Supports simultaneous monitoring/programming
+
+---
+
+### CAN Communication
+- Dual MCP2515 + TJA1050 nodes
+- Shared CAN differential bus
+- 120 Ω termination
+- TVS protection for transient suppression
+
+---
+
+### Wireless Communication
+- HC-12 for long-range communication
+- nRF24L01 for short-range high-speed communication
+- Dual-band wireless redundancy
+
+---
+
+### Sensor / Camera Interfaces
+- 4 analog camera channels
+- Differential routing through RJ45 connectors
+- Combined structured cabling for camera and CAN lines
+
+---
+
+### Power System
+- 5V input from TPU
+- AMS1117 for logic rails
+- USB polyfuse protection
+- Dedicated power switch
+
+---
+
+## Design Highlights
+- 4-layer PCB stackup: Signal / GND / Power / Signal
+- Controlled differential routing for CAN and camera lines
+- ESD/transient protection on external interfaces
+- Mechanical stack alignment with TPU using shared mounting holes
+
+---
+
+## PCB Layout
+<img src="assets/tcu/layout.png" width="700">
+
+---
+
+## Key Schematic
+<img src="assets/tcu/schematic.png" width="700">
+
+---
+
+## Final Board
+<img src="assets/tcu/final_board.png" width="700">
 
 ---
 
